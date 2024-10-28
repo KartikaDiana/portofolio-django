@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section nav {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+section nav ul li a:hover {
+    color: rgb(105, 0, 0);
+}
+
+section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+section nav .icon i:hover {
+    color: rgb(148, 3, 3);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; 
+    width: 100%;
+    max-width: 1150px;
+    padding: 20px;
+}
+
+.main .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.main .text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.main .text h1 span {
+    color: rgb(117, 1, 1);
+    font-family: "MV Boli", sans-serif;
+}
+
+.main .text p {
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.button {
+    background: rgb(117, 1, 1);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: rgb(148, 3, 3);
+}
+
+.main .main_image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.main .main_image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main .text {
+        text-align: center;
+    }
+
+    .main .main_image img {
+        width: 80%;
+    }
+
+    section nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.biodata-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.biodata-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.biodata-content .photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.biodata-content .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.biodata-content .info {
+    flex: 2;
+    padding-left: 30px;
+}
+
+.biodata-content .info h2 {
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+.biodata-content .info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.biodata-content .info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.biodata-content .info ul li strong {
+    width: 150px; 
+    color: #8b0000;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .biodata-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .biodata-content .info {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .biodata-content .photo img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.education-info {
+    flex: 2;
+    text-align: left;
+}
+
+.education-info h2 {
+    font-size: 24px;
+    color: #8b0000;
+    margin-bottom: 15px;
+}
+
+.education-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.education-info li strong {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .education-info {
+        text-align: center;
+    }
+}
+
+
+.organization-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.organization-section h2 {
+    font-size: 24px;
+    color: #8b0000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.organization-table {
+    display: table;
+    width: 100%;
+}
+
+.organization-row {
+    display: table-row;
+    text-align: left;
+}
+
+.organization-column {
+    display: table-cell;
+    padding: 10px 20px;
+    vertical-align: top;
+}
+
+.organization-row:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.organization-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .organization-table {
+        display: block;
+    }
+    .organization-row {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .organization-column {
+        display: block;
+        padding: 5px 0;
+    }
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+

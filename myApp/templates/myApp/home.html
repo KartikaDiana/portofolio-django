@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Asset/Style.css' %}">
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="navbar-container">
+                <ul>
+                    <li><a href="{% url 'profile' %}">Profil</a></li>
+                    <li><a href="{% url 'education' %}">Education</a></li>
+                    <li><a href="{% url 'organization' %}">Organisasi</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                </ul>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="text">
+                <h1>Hello, I am<span><br>Kartika Diana</span></h1>
+                <p>
+                    "I am a third-semester student majoring in Computer Science Education at Universitas Pendidikan Indonesia. 
+                    Driven by a strong passion for technology and education, I am continually honing my skills in programming and digital pedagogy. 
+                    My goal is to bridge the gap between computing and learning, developing innovative solutions that can make a meaningful impact. 
+                    Welcome to my journey!"
+                </p>
+                <div class="button">
+                    <a href="#">Contact Me</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="main_image">
+                <img src="{% static 'image/tika.jpg' %}" alt="Kartika Diana">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
